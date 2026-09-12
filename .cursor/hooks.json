@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "hooks": {
+    "afterFileEdit": [
+      {
+        "command": "./.cursor/gadriel-hook.sh afterFileEdit"
+      }
+    ],
+    "beforeSubmitPrompt": [
+      {
+        "command": "./.cursor/gadriel-hook.sh beforeSubmitPrompt"
+      }
+    ]
+  }
+}
