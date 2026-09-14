@@ -1,9 +1,5 @@
 # /gadriel-watch
 
-Start the Gadriel L1 watch daemon for low-latency on-save scanning
-
-# /gadriel-watch
-
 Start the Gadriel L1 watch daemon, which monitors the working tree for file
 changes and re-runs the relevant per-file scanners on save. This is the
 tight-loop developer experience: edit a file, get findings in under a second

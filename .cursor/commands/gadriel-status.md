@@ -1,9 +1,5 @@
 # /gadriel-status
 
-Show the current Gadriel pillar verdict and finding counts
-
-# /gadriel-status
-
 Print a one-screen verdict of the repo's current security posture: the pillar
 scores (from `.security/pillar-scores.json`), the open finding counts by
 severity (from `.security/findings.json`), and the headline pass/fail gate that

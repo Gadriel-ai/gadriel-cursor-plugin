@@ -6,12 +6,13 @@
 # guardrail on the file Cursor just edited and surfaces any finding back to the
 # agent.
 #
-# NOTE: Cursor's exact hook output schema for surfacing a message on
-# `afterFileEdit` is not something this repo could verify against a live Cursor.
-# The shim therefore fails SAFE — it prints the finding as an `agentMessage`
-# (and to stderr) and exits 0 (never blocks), so it can only add context, never
-# wedge the agent. Adjust the output shape if Cursor's docs specify a stricter
-# schema. GADRIEL_GUARDRAIL=off disables it.
+# Cursor hooks pass the event context to the hook as JSON on stdin, and the
+# hook surfaces a message back via JSON on stdout. Per the Cursor hooks docs the
+# field is snake_case `agent_message`. This shim fails SAFE — it emits the
+# finding as `agent_message` and exits 0 (never blocks), so it can only add
+# context, never wedge the agent. GADRIEL_GUARDRAIL=off disables it. The event
+# name is also read from stdin by Cursor; the positional arg here is only this
+# shim's own hint.
 set -eu
 
 phase=${1:-afterFileEdit}
@@ -40,6 +41,6 @@ rc=$?
 set -e
 if [ "$rc" -eq 2 ]; then
   esc=$(printf '%s' "$reason" | tr '\t\r\n' '   ' | tr -d '\000-\037' | sed 's/\\/\\\\/g; s/"/\\"/g')
-  printf '{"agentMessage":"%s Fix this before continuing."}\n' "$esc"
+  printf '{"agent_message":"%s Fix this before continuing."}\n' "$esc"
 fi
 exit 0

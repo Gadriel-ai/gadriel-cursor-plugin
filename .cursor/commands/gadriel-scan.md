@@ -1,9 +1,5 @@
 # /gadriel-scan
 
-Run a full Gadriel code security scan against the repo (or a scoped path)
-
-# /gadriel-scan
-
 Run the Gadriel code security scanner against the current repository, or scope
 the scan to a specific path supplied as an argument. This is the headline entry
 point for ad-hoc verification when a developer wants to confirm the repo is

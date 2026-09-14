@@ -1,9 +1,5 @@
 # /gadriel-reports
 
-Generate all Gadriel compliance PDFs (one per pillar plus the umbrella report)
-
-# /gadriel-reports
-
 Generate the full set of Gadriel compliance PDFs and drop them into
 `.security/compliance/`. Each of the eight pillars produces its own report
 (L1 input handling, L2 output handling, L3 data layer, L4 identity, AI, API,

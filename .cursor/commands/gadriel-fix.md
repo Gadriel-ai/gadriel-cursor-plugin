@@ -1,9 +1,5 @@
 # /gadriel-fix
 
-Propose and apply a remediation for a specific Gadriel finding by ID
-
-# /gadriel-fix
-
 Apply (or propose) a remediation for a specific Gadriel finding. The finding ID
 is required and should match the canonical rule code emitted by the scanner —
 for example `CODE-W1-L1-001`, `CODE-W1-AI-636`, or `CODE-W3-CONFIG-218`.
