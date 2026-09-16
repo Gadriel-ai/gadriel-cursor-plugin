@@ -18,7 +18,7 @@ OWASP LLM Top 10, with 3,000+ rules. Scanning runs on your machine.
 asks you to approve the `gadriel` MCP server):
 
 ```
-cursor://anysphere.cursor-deeplink/mcp/install?name=gadriel&config=eyJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImdhZHJpZWxAMS40LjAiLCJjb2RlIiwibWNwIl19
+cursor://anysphere.cursor-deeplink/mcp/install?name=gadriel&config=eyJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImdhZHJpZWxAMS40LjEiLCJjb2RlIiwibWNwIl19
 ```
 
 **Or per-project:** copy the `.cursor/` directory from this repo into your
