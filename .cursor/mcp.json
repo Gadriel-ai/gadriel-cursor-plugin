@@ -2,7 +2,7 @@
   "mcpServers": {
     "gadriel": {
       "command": "npx",
-      "args": ["-y", "gadriel@1.4.0", "code", "mcp"]
+      "args": ["-y", "gadriel@1.4.1", "code", "mcp"]
     }
   }
 }
