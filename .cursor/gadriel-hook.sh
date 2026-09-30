@@ -27,7 +27,7 @@ project=${PWD}
 if command -v gadriel >/dev/null 2>&1; then
   run() { gadriel "$@"; }
 elif command -v npx >/dev/null 2>&1; then
-  run() { npx -y gadriel@1.4.1 "$@"; }
+  run() { npx -y gadriel@1.5.0 "$@"; }
 else
   exit 0
 fi
