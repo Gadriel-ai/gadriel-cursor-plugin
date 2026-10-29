@@ -1,5 +1,8 @@
 # Gadriel — AI Security Harness for Cursor
 
+**[Product Overview](https://gadriel.ai/code-security)** · **[Documentation](https://gadriel.ai/docs)** · **[MCP Tools Reference](https://gadriel.ai/docs/gca/mcp-tools-reference.html)** · **[SAST Benchmarks](https://gadriel.ai/blog/gadriel-vs-semgrep.html)**
+
+
 Cursor writes code fast. Gadriel makes sure what it writes is safe.
 
 This is the Cursor build of the [Gadriel](https://gadriel.ai) AI Security
